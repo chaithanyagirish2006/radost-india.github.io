@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Radost India Café — fresh Indian café food, specialty coffee, warm moments, and easy table bookings." />
+    <meta name="theme-color" content="#1c1917" />
+    <title>Radost India Café — Fresh food, warmer moments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="bg-[#F2F2F2] text-stone-900 font-sans antialiased selection:bg-stone-900 selection:text-white">
+    <div class="max-w-[1600px] mx-auto p-2 sm:p-4 lg:p-6">
+      <header class="relative w-full min-h-[680px] h-[95vh] rounded-[2rem] overflow-hidden bg-stone-900 shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=3840" alt="Warm interior of Radost India Café" class="absolute inset-0 w-full h-full object-cover opacity-80" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/45 via-transparent to-black/75"></div>
+
+        <nav class="relative z-20 flex items-center justify-between px-5 py-6 sm:px-10" aria-label="Primary navigation">
+          <a href="#top" class="flex items-center gap-2" aria-label="Radost India Café home">
+            <span class="bg-white/20 backdrop-blur-md p-2 rounded-lg border border-white/10 flex items-center justify-center">
+              <iconify-icon icon="solar:cup-linear" class="text-white text-2xl" stroke-width="1.5"></iconify-icon>
+            </span>
+            <span class="text-white text-lg font-medium tracking-tight">Radost.</span>
+          </a>
+          <div class="hidden md:flex items-center gap-1 bg-white/10 backdrop-blur-md border border-white/10 rounded-full p-1.5 px-2">
+            <a href="#about" class="nav-link">Our story</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </div>
+          <div class="hidden md:flex items-center gap-3">
+            <a href="#location" class="icon-button" aria-label="View location"><iconify-icon icon="solar:map-point-linear" class="text-lg" stroke-width="1.5"></iconify-icon></a>
+            <button type="button" class="contact-button" data-open-booking>
+              <span class="text-sm font-medium text-stone-900">Book a table</span>
+              <span class="w-8 h-8 bg-stone-900 rounded-full flex items-center justify-center"><iconify-icon icon="solar:calendar-linear" class="text-white text-base" stroke-width="1.5"></iconify-icon></span>
+            </button>
+          </div>
+          <div class="flex items-center gap-2 md:hidden">
+            <button type="button" class="mobile-cart-button" data-open-cart aria-label="Open cart"><iconify-icon icon="solar:bag-3-linear" class="text-xl"></iconify-icon><span data-cart-count>0</span></button>
+            <button type="button" class="mobile-menu-button" data-toggle-mobile-nav aria-label="Open menu"><iconify-icon icon="solar:hamburger-menu-linear" class="text-2xl"></iconify-icon></button>
+          </div>
+        </nav>
+        <div class="mobile-nav-panel" data-mobile-nav>
+          <a href="#about">Our story</a><a href="#menu">Menu</a><a href="#services">Services</a><a href="#gallery">Gallery</a><button type="button" data-open-booking>Book a table</button>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full p-6 sm:p-10 z-10 flex flex-col items-center justify-center h-full pt-32 pb-12" id="top">
+          <div class="text-center max-w-3xl">
+            <span class="inline-block px-3 py-1 mb-6 text-xs font-medium tracking-wider text-white uppercase bg-white/20 backdrop-blur-md rounded-full border border-white/10">Made in India · Since 2024</span>
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl text-white font-medium tracking-tighter leading-[1.1] mb-6">Fresh food,<br />warmer moments.</h1>
+            <p class="text-lg sm:text-xl text-white/80 font-light leading-relaxed mb-10 max-w-xl mx-auto">A neighbourhood café in Bengaluru for Indian flavours, excellent coffee, and the kind of company that makes an ordinary day feel special.</p>
+            <a href="#menu" class="group inline-flex items-center gap-4 bg-white text-stone-900 pl-8 pr-2 py-2 rounded-full hover:shadow-xl hover:shadow-white/20 transition-all"><span class="text-base font-medium">Explore the menu</span><span class="w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center group-hover:bg-stone-700 transition-colors"><iconify-icon icon="solar:arrow-down-linear" class="text-white text-xl" stroke-width="1.5"></iconify-icon></span></a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="about" class="mt-24 px-4 sm:px-6 scroll-mt-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+            <div class="lg:col-span-6">
+              <span class="eyebrow">Our story</span>
+              <h2 class="section-title">Everyday joy,<br class="hidden sm:block" /> served fresh.</h2>
+              <p class="body-large">We believe the best café moments are simple, generous, and shared. At Radost, we bring local produce, Indian recipes, and modern café craft together so every bite feels familiar and new.</p>
+              <p class="body-copy">From a slow South Indian filter coffee in the morning to a warm masala bun at sunset, our kitchen is made for easy conversations, unhurried lunches, and small celebrations.</p>
+              <div class="flex gap-8 border-t border-stone-200 pt-8 mt-8">
+                <div><span class="stat-value">100%</span><span class="stat-label">Indian coffee beans</span></div>
+                <div><span class="stat-value">Daily</span><span class="stat-label">Fresh bakes</span></div>
+              </div>
+            </div>
+            <div class="lg:col-span-6 relative">
+              <div class="relative h-[500px] w-full rounded-[2rem] overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=1600" alt="Barista preparing coffee" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute bottom-6 left-6 right-6"><div class="glass-chip"><div class="w-10 h-10 rounded-full bg-stone-900 flex items-center justify-center text-white"><iconify-icon icon="solar:chef-hat-linear" class="text-xl" stroke-width="1.5"></iconify-icon></div><div><span class="text-xs font-semibold text-stone-500 uppercase tracking-wider block">From our kitchen</span><p class="text-stone-900 font-medium text-sm">Recipes with a little more heart</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="menu" class="mt-24 px-4 sm:px-6 scroll-mt-8">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div class="max-w-xl"><span class="eyebrow">Made to be shared</span><h2 class="section-title mb-4">Our menu</h2><p class="text-stone-500 font-light">Explore Indian café favourites, comforting plates, and small treats made fresh throughout the day.</p></div>
+            <button type="button" class="dark-pill-button" data-open-cart><iconify-icon icon="solar:bag-3-linear" class="text-lg"></iconify-icon><span>Cart</span><span class="cart-pill-count" data-cart-count>0</span></button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="category-cards"></div>
+        </section>
+
+        <section class="mt-16 px-4 sm:px-6 space-y-20" aria-label="Menu items">
+          <div id="menu-sections"></div>
+        </section>
+
+        <section class="mt-24 bg-stone-900 text-white rounded-[2rem] overflow-hidden relative py-20 px-6 sm:px-12">
+          <div class="absolute inset-0 opacity-20"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=3840" alt="Café texture" class="w-full h-full object-cover" /></div>
+          <div class="relative z-10 max-w-4xl mx-auto text-center mb-16"><span class="eyebrow eyebrow-dark">The Radost feeling</span><h2 class="text-3xl sm:text-4xl font-medium tracking-tight mb-6">Come for the flavour.<br />Stay for the feeling.</h2><p class="text-stone-300 text-lg font-light">We are not just serving food; we are making room for good days.</p></div>
+          <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="feature-card"><div class="feature-icon"><iconify-icon icon="solar:leaf-linear" class="text-3xl" stroke-width="1.5"></iconify-icon></div><h3>Fresh ingredients</h3><p>Local produce, seasonal specials, and pantry staples chosen with care.</p></div>
+            <div class="feature-card"><div class="feature-icon"><iconify-icon icon="solar:sofa-linear" class="text-3xl" stroke-width="1.5"></iconify-icon></div><h3>Unhurried atmosphere</h3><p>Warm light, thoughtful details, and comfortable corners for your people.</p></div>
+            <div class="feature-card"><div class="feature-icon"><iconify-icon icon="solar:smile-circle-linear" class="text-3xl" stroke-width="1.5"></iconify-icon></div><h3>Friendly service</h3><p>A welcoming team that remembers your coffee and makes you feel at home.</p></div>
+          </div>
+        </section>
+
+        <section id="services" class="px-4 sm:px-6 scroll-mt-8 mt-24">
+          <div class="max-w-xl mx-auto text-center mb-12"><span class="eyebrow">For your moments</span><h2 class="section-title mb-4">Our services</h2><p class="font-light text-stone-500">Space, food, and thoughtful hosting for the moments worth gathering for.</p></div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <article class="service-card"><div class="service-image"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800" alt="Team gathering at a café" /></div><div class="px-4 pb-4"><div class="flex items-center gap-2 mb-2"><iconify-icon icon="solar:users-group-rounded-linear" class="text-stone-900 text-lg" stroke-width="1.5"></iconify-icon><h3>Team gatherings</h3></div><p>Make your next team moment easy with a relaxed setting and a menu built for sharing.</p></div></article>
+            <article class="service-card"><div class="service-image"><img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=800" alt="Private café event" /></div><div class="px-4 pb-4"><div class="flex items-center gap-2 mb-2"><iconify-icon icon="solar:cup-hot-linear" class="text-stone-900 text-lg" stroke-width="1.5"></iconify-icon><h3>Private events</h3></div><p>Book our café for intimate celebrations, launches, and evenings that feel personal.</p></div></article>
+            <article class="service-card"><div class="service-image"><img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800" alt="Catering spread" /></div><div class="px-4 pb-4"><div class="flex items-center gap-2 mb-2"><iconify-icon icon="solar:chef-hat-linear" class="text-stone-900 text-lg" stroke-width="1.5"></iconify-icon><h3>Café catering</h3></div><p>Our most-loved bakes, bowls, and brews delivered to your next gathering in Bengaluru.</p></div></article>
+          </div>
+        </section>
+
+        <section id="gallery" class="mt-24 px-4 sm:px-6 scroll-mt-8">
+          <div class="text-center mb-12"><span class="eyebrow">A visual taste</span><h2 class="section-title">Inside Radost</h2></div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[190px] md:auto-rows-[300px]">
+            <div class="col-span-2 md:col-span-2 row-span-2 gallery-tile"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1600" alt="Craft cocktails and drinks" /></div>
+            <div class="gallery-tile"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800" alt="Coffee and pastries" /></div>
+            <div class="gallery-tile"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&q=80&w=800" alt="Fresh Indian bowl" /></div>
+            <div class="gallery-tile"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=800" alt="Fresh dessert" /></div>
+            <div class="gallery-tile"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" alt="Radost interior" /></div>
+          </div>
+        </section>
+
+        <section id="location" class="mt-24 px-4 sm:px-6 pb-12 scroll-mt-8">
+          <div class="border-t border-stone-200 pt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            <div><span class="eyebrow">Find us</span><h2 class="text-3xl font-medium tracking-tight mb-4">Drop by for a cup.</h2><p class="body-copy">12, 80 Feet Road, Indiranagar<br />Bengaluru, Karnataka 560038<br />India</p></div>
+            <div><span class="eyebrow">Opening hours</span><p class="body-copy">Monday — Friday · 8:00 AM – 10:30 PM<br />Saturday — Sunday · 8:30 AM – 11:00 PM</p></div>
+            <div><span class="eyebrow">Say hello</span><a href="tel:+918012345678" class="contact-link">+91 80 1234 5678</a><a href="mailto:hello@radost.in" class="contact-link">hello@radost.in</a><button type="button" class="outline-button mt-5" data-open-booking>Book a table <iconify-icon icon="solar:arrow-right-up-linear"></iconify-icon></button></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-stone-200 px-4 sm:px-6 py-8 flex flex-col sm:flex-row justify-between gap-4 text-sm text-stone-500"><span>© 2024 Radost India Café</span><span>Freshly made in Bengaluru · Prices inclusive of applicable taxes</span></footer>
+    </div>
+
+    <div class="modal-backdrop hidden" data-product-modal aria-hidden="true"><div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="product-modal-title"><button type="button" class="modal-close" data-close-modal aria-label="Close product detail"><iconify-icon icon="solar:close-circle-linear"></iconify-icon></button><div class="product-modal-grid"><div class="modal-image-wrap"><img data-modal-image alt="" /></div><div class="modal-copy"><span class="eyebrow" data-modal-category></span><h2 id="product-modal-title" data-modal-title></h2><p class="modal-description" data-modal-description></p><div class="modal-meta"><strong data-modal-price></strong><span data-modal-note></span></div><div class="modal-actions"><button type="button" class="dark-button flex-1" data-modal-add>Add to cart <iconify-icon icon="solar:bag-3-linear"></iconify-icon></button><button type="button" class="outline-button" data-open-cart>View cart</button></div><div class="related-block"><h3>You may also like</h3><div class="related-grid" data-related-products></div></div></div></div></div></div>
+
+    <aside class="cart-drawer" data-cart-drawer aria-hidden="true"><div class="drawer-header"><div><span class="eyebrow">Your selection</span><h2>Your cart</h2></div><button type="button" class="modal-close static-close" data-close-cart aria-label="Close cart"><iconify-icon icon="solar:close-circle-linear"></iconify-icon></button></div><div class="cart-items" data-cart-items></div><div class="cart-empty hidden" data-cart-empty><iconify-icon icon="solar:bag-3-linear" class="text-4xl text-stone-300"></iconify-icon><p>Your cart is waiting for something delicious.</p><a href="#menu" data-close-cart>Explore the menu</a></div><div class="cart-summary"><div><span>Subtotal</span><strong data-cart-subtotal>₹0</strong></div><div><span>Delivery</span><strong data-cart-delivery>₹0</strong></div><div class="cart-total"><span>Total</span><strong data-cart-total>₹0</strong></div><button type="button" class="dark-button w-full" data-open-checkout>Checkout <iconify-icon icon="solar:arrow-right-linear"></iconify-icon></button></div></aside><div class="drawer-backdrop" data-close-cart></div>
+
+    <div class="modal-backdrop hidden" data-form-modal aria-hidden="true"><div class="form-modal" role="dialog" aria-modal="true" aria-labelledby="form-modal-title"><button type="button" class="modal-close" data-close-form aria-label="Close"><iconify-icon icon="solar:close-circle-linear"></iconify-icon></button><div class="form-intro"><span class="eyebrow" data-form-eyebrow>Radost India Café</span><h2 id="form-modal-title" data-form-title>Book a table</h2><p data-form-description>Tell us when you would like to visit and we will keep a table ready for you.</p></div><form data-booking-form class="space-y-4"><div class="form-grid"><label>Date<input type="date" name="date" required /></label><label>Time<select name="time" required><option value="">Select time</option><option>10:00 AM</option><option>12:30 PM</option><option>3:00 PM</option><option>6:30 PM</option><option>8:30 PM</option></select></label></div><div class="form-grid"><label>Guests<select name="guests" required><option value="">Party size</option><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label><label>Phone<input type="tel" name="phone" placeholder="+91 98765 43210" required /></label></div><label>Your name<input type="text" name="name" placeholder="Aarav Sharma" required /></label><button type="submit" class="dark-button w-full">Confirm booking <iconify-icon icon="solar:calendar-add-linear"></iconify-icon></button></form><form data-checkout-form class="space-y-4 hidden"><label>Your name<input type="text" name="name" placeholder="Aarav Sharma" required /></label><label>Phone number<input type="tel" name="phone" placeholder="+91 98765 43210" required /></label><label>Delivery address<textarea name="address" rows="3" placeholder="Flat, street, area, Bengaluru" required></textarea></label><div class="form-grid"><label>Delivery slot<select name="slot" required><option value="">Choose a slot</option><option>ASAP · 30–45 min</option><option>12:00 PM – 1:00 PM</option><option>7:00 PM – 8:00 PM</option></select></label><label>Payment<select name="payment" required><option value="">Choose payment</option><option>Pay on delivery</option><option>UPI on delivery</option></select></label></div><button type="submit" class="dark-button w-full">Place demo order <iconify-icon icon="solar:check-circle-linear"></iconify-icon></button><p class="form-footnote">Demo checkout only — no payment is processed.</p></form><div class="success-state hidden" data-form-success><div class="success-icon"><iconify-icon icon="solar:check-circle-linear"></iconify-icon></div><h3 data-success-title>You're all set.</h3><p data-success-copy></p><button type="button" class="outline-button" data-close-form>Done</button></div></div></div>
+
+    <div class="toast" data-toast role="status" aria-live="polite"><iconify-icon icon="solar:check-circle-linear"></iconify-icon><span data-toast-text>Added to cart</span></div>
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>
